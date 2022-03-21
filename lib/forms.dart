@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-dynamic fORM1(String iMANGENAME, String tEXT1, String tEXT2) {
+dynamic fORM1(String imagename, String text1, String text2) {
   return Container(
     height: 300,
     width: 200,
@@ -21,7 +21,7 @@ dynamic fORM1(String iMANGENAME, String tEXT1, String tEXT2) {
         height: 190,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: Image.asset(iMANGENAME).image, fit: BoxFit.cover),
+                image: Image.asset(imagename).image, fit: BoxFit.cover),
             // color: Color.fromARGB(255, 51, 32, 121),
             borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(15), topRight: Radius.circular(15))),
@@ -32,7 +32,7 @@ dynamic fORM1(String iMANGENAME, String tEXT1, String tEXT2) {
         margin: const EdgeInsets.only(top: 0),
         alignment: const Alignment(-1, -1),
         child: Text(
-          tEXT1,
+          text1,
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
@@ -42,7 +42,7 @@ dynamic fORM1(String iMANGENAME, String tEXT1, String tEXT2) {
         margin: const EdgeInsets.only(bottom: 1),
         alignment: const Alignment(-1, 0),
         child: Text(
-          tEXT2,
+          text2,
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
@@ -52,7 +52,7 @@ dynamic fORM1(String iMANGENAME, String tEXT1, String tEXT2) {
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-dynamic fORM2(String iMANGENAME, String tEXT1, Color color1) {
+dynamic fORM2(String imagename, String text1, Color color1) {
   return Container(
     margin: const EdgeInsets.only(left: 3, right: 3, top: 3),
     height: 100,
@@ -67,7 +67,7 @@ dynamic fORM2(String iMANGENAME, String tEXT1, Color color1) {
           decoration: BoxDecoration(
             color: const Color.fromARGB(255, 174, 228, 225),
             image: DecorationImage(
-                image: Image.asset(iMANGENAME).image, fit: BoxFit.cover),
+                image: Image.asset(imagename).image, fit: BoxFit.cover),
             shape: BoxShape.circle,
           ),
         ),
@@ -81,7 +81,7 @@ dynamic fORM2(String iMANGENAME, String tEXT1, Color color1) {
           ),
           child: ElevatedButton(
             child: Text(
-              tEXT1,
+              text1,
               style: TextStyle(color: color1),
             ),
             onPressed: () {},
@@ -97,7 +97,7 @@ dynamic fORM2(String iMANGENAME, String tEXT1, Color color1) {
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-dynamic fORM3(String tEXT1, String tEXT2) {
+dynamic fORM3(String text1, String text2) {
   return Container(
     margin: const EdgeInsets.only(bottom: 10, left: 15, right: 15),
     height: 70,
@@ -108,7 +108,7 @@ dynamic fORM3(String tEXT1, String tEXT2) {
           height: 70,
           width: 250,
           child: Text(
-            tEXT1,
+            text1,
             style: const TextStyle(fontSize: 20),
           ),
         ),
@@ -117,7 +117,7 @@ dynamic fORM3(String tEXT1, String tEXT2) {
           height: 70,
           width: 220,
           child: TextButton(
-            child: Text(tEXT2),
+            child: Text(text2),
             onPressed: () {},
             style: TextButton.styleFrom(
                 primary: Colors.blue, textStyle: const TextStyle(fontSize: 20)),
@@ -130,7 +130,7 @@ dynamic fORM3(String tEXT1, String tEXT2) {
 
 //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
-dynamic fORM4(String iMANGENAME, String tEXT1, String tEXT2) {
+dynamic fORM4(String imagename, String text1, String text2) {
   return Container(
     height: 400,
     margin: const EdgeInsets.all(15),
@@ -148,7 +148,7 @@ dynamic fORM4(String iMANGENAME, String tEXT1, String tEXT2) {
         height: 290,
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: Image.asset(iMANGENAME).image, fit: BoxFit.cover),
+                image: Image.asset(imagename).image, fit: BoxFit.cover),
             // color: Color.fromARGB(255, 51, 32, 121),
             borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(15), topRight: Radius.circular(15))),
@@ -159,7 +159,7 @@ dynamic fORM4(String iMANGENAME, String tEXT1, String tEXT2) {
         margin: const EdgeInsets.only(top: 0),
         alignment: const Alignment(-0.9, -1),
         child: Text(
-          tEXT1,
+          text1,
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
       ),
@@ -168,7 +168,7 @@ dynamic fORM4(String iMANGENAME, String tEXT1, String tEXT2) {
         margin: const EdgeInsets.only(bottom: 1),
         alignment: const Alignment(-0.9, 0),
         child: Text(
-          tEXT2,
+          text2,
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         decoration: const BoxDecoration(

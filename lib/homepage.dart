@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_7/components/big_product_info_list.dart';
+import 'package:flutter_application_7/components/bootom_nav_bar.dart';
+import 'package:flutter_application_7/components/panel_button_Seeall.dart';
+import 'package:flutter_application_7/components/product_info_list1.dart';
+import 'package:flutter_application_7/components/product_info_list3.dart';
+import 'package:flutter_application_7/components/product_infol_ist2.dart';
+import 'package:flutter_application_7/components/rec_product_list2.dart';
 import 'package:flutter_application_7/components/rec_products_list.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,88 +28,32 @@ class HomePage extends StatelessWidget {
       ),
       backgroundColor: const Color(0xFFFFFFFF),
       body: Stack(
-        children: const [RecProductList(), BottomNavBar()],
-      ),
-    );
-  }
-}
-
-class RecProductList extends StatelessWidget {
-  const RecProductList({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: const [
-          RecProduct(
-              image: '../assets/images/girq.jpg',
-              text: 'Top Book',
-              color1: Colors.red),
-          RecProduct(
-              image: '../assets/images/girq.jpg',
-              text: 'Top Book',
-              color1: Colors.red),
-          RecProduct(
-              image: '../assets/images/girq.jpg',
-              text: 'Top Book',
-              color1: Colors.red),
-          RecProduct(
-              image: '../assets/images/girq.jpg',
-              text: 'Top Book',
-              color1: Colors.red),
-          RecProduct(
-              image: '../assets/images/girq.jpg',
-              text: 'Top Book',
-              color1: Colors.red),
+        children: [
+          SizedBox(
+            height: double.infinity,
+            width: double.infinity,
+            //color: Colors.red,
+            child: ListView(children: const [
+              RecProductList(),
+              PanelButtonSeeall(text1: 'Category name', text2: 'See all'),
+              ProductInfoList1(),
+              PanelButtonSeeall(text1: 'Category name', text2: 'See all'),
+              ProductInfoList2(),
+              RecProductList2(),
+              PanelButtonSeeall(text1: 'Category name', text2: 'See all'),
+              BigProductInfoList(
+                  imagename: '../assets/images/24.jpg',
+                  text1: 'Produqt name',
+                  text2: '29.99 OMR'),
+              PanelButtonSeeall(text1: 'Category name', text2: 'See all'),
+              ProductInfoList3(),
+              SizedBox(
+                height: 80,
+              )
+            ]),
+          ),
+          const BottomNavBar(),
         ],
-      ),
-    );
-  }
-}
-
-class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
-      alignment: const Alignment(0.0, 1.0),
-      child: ClipRRect(
-        borderRadius: const BorderRadius.all(Radius.circular(30)),
-        child: BottomNavigationBar(
-          unselectedItemColor: Colors.grey,
-          selectedItemColor: const Color.fromARGB(255, 34, 46, 45),
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-              backgroundColor: Color.fromARGB(255, 220, 243, 247),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              label: 'School',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              label: 'Search',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.shop),
-              label: 'Cart',
-            )
-          ],
-        ),
       ),
     );
   }

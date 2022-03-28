@@ -14,21 +14,21 @@ class PanelButtonSeeall extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 10, left: 15, right: 15),
       height: 70,
+      width: double.infinity,
       child: Row(
         children: [
           Container(
             alignment: const Alignment(-1, 1),
             height: 70,
-            width: 250,
             child: Text(
               text1,
               style: const TextStyle(fontSize: 20),
             ),
           ),
+          const Spacer(),
           Container(
             alignment: const Alignment(1, 1),
             height: 70,
-            width: 220,
             child: TextButton(
               child: Text(text2),
               onPressed: () {},

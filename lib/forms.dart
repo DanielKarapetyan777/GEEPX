@@ -1,5 +1,5 @@
+/*
 import 'package:flutter/material.dart';
-
 dynamic fORM1(String imagename, String text1, String text2) {
   return Container(
     height: 300,
@@ -179,4 +179,4 @@ dynamic fORM4(String imagename, String text1, String text2) {
       ),
     ]),
   );
-}
+}*/

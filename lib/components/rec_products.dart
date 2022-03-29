@@ -6,10 +6,11 @@ class RecProduct extends StatelessWidget {
     this.image = '',
     this.text = '',
     this.color1 = Colors.white,
+    this.color2 = Colors.white,
   }) : super(key: key);
 
   final String image, text;
-  final Color color1;
+  final Color color1, color2;
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +49,7 @@ class RecProduct extends StatelessWidget {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     minimumSize: const Size(110, 30),
-                    primary: const Color.fromARGB(255, 255, 238, 238),
+                    primary: color2,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                   ),
@@ -115,4 +116,8 @@ class RecProduct extends StatelessWidget {
             ),
           ),
         ],
-      ), */
+      ), 
+      
+      
+      Color.fromARGB(255, 255, 238, 238)
+      */

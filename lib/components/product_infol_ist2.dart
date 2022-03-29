@@ -15,19 +15,19 @@ class ProductInfoList2 extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: const [
           ProductInfo(
-              imagename: '../assets/images/12.jpg',
+              imagename: 'assets/images/12.jpg',
               text1: 'Produqt name',
               text2: '29.99 OMR'),
           ProductInfo(
-              imagename: '../assets/images/13.jpg',
+              imagename: 'assets/images/13.jpg',
               text1: 'Produqt name',
               text2: '29.99 OMR'),
           ProductInfo(
-              imagename: '../assets/images/14.jpg',
+              imagename: 'assets/images/14.jpg',
               text1: 'Produqt name',
               text2: '29.99 OMR'),
           ProductInfo(
-              imagename: '../assets/images/11.jpg',
+              imagename: 'assets/images/11.jpg',
               text1: 'Produqt name',
               text2: '29.99 OMR'),
         ],

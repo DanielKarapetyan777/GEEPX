@@ -13,29 +13,29 @@ class BottomNavBar extends StatelessWidget {
       child: ClipRRect(
         borderRadius: const BorderRadius.all(Radius.circular(30)),
         child: BottomNavigationBar(
-          unselectedItemColor: Colors.grey,
+          unselectedItemColor: const Color.fromARGB(255, 86, 99, 98),
           selectedItemColor: const Color.fromARGB(255, 34, 46, 45),
-          items: const <BottomNavigationBarItem>[
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               label: 'Home',
-              backgroundColor: Color.fromARGB(255, 220, 243, 247),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.business),
-              label: 'Business',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.school),
-              label: 'School',
+              backgroundColor: Color.fromARGB(255, 241, 250, 252),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search),
               label: 'Search',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shop),
-              label: 'Cart',
+              icon: Icon(Icons.shopping_basket),
+              label: 'Card',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.notifications),
+              label: 'Notice',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Pofile',
             )
           ],
         ),

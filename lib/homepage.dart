@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 238, 231, 231),
+        backgroundColor: Colors.white,
         title: const Text(
           'GEEPX',
           style: TextStyle(
@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
               RecProductList2(),
               PanelButtonSeeall(text1: 'Category name', text2: 'See all'),
               BigProductInfoList(
-                  imagename: '../assets/images/24.jpg',
+                  imagename: 'assets/images/24.jpg',
                   text1: 'Produqt name',
                   text2: '29.99 OMR'),
               PanelButtonSeeall(text1: 'Category name', text2: 'See all'),

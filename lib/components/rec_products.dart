@@ -13,7 +13,7 @@ class RecProduct extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       child: Stack(children: [
         Container(
           margin: const EdgeInsets.only(left: 3, right: 3, top: 3),
@@ -25,7 +25,7 @@ class RecProduct extends StatelessWidget {
                 width: 110,
                 margin: const EdgeInsets.only(top: 0, bottom: 2),
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 174, 228, 225),
+                  //color: const Color.fromARGB(255, 174, 228, 225),
                   image: DecorationImage(
                       image: Image.asset(image).image, fit: BoxFit.cover),
                   shape: BoxShape.circle,
@@ -38,15 +38,19 @@ class RecProduct extends StatelessWidget {
                 margin: const EdgeInsets.only(
                   left: 2,
                   right: 2,
+                  top: 5,
                 ),
-                child: ElevatedButton(
+                child: TextButton(
                   child: Text(
                     text,
                     style: TextStyle(color: color1),
                   ),
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 221, 229, 230),
+                    minimumSize: const Size(110, 30),
+                    primary: const Color.fromARGB(255, 255, 238, 238),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
                   ),
                 ),
               ),
@@ -55,14 +59,15 @@ class RecProduct extends StatelessWidget {
         ),
         Container(
           margin: const EdgeInsets.only(left: 75, top: 40),
-          height: 30,
-          width: 30,
+          height: 26,
+          width: 26,
           decoration: BoxDecoration(
               color: color1,
               borderRadius: const BorderRadius.all(Radius.circular(15))),
           child: IconButton(
+            iconSize: 18,
             padding: const EdgeInsets.all(2),
-            icon: const Icon(Icons.shop),
+            icon: const Icon(Icons.shopping_basket),
             color: Colors.white,
             onPressed: () {},
           ),

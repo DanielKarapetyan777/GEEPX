@@ -15,23 +15,23 @@ class RecProductList2 extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: const [
           RecProduct(
-              image: '../assets/images/19.jpg',
+              image: 'assets/images/19.jpg',
               text: 'Top Book',
               color1: Colors.blue),
           RecProduct(
-              image: '../assets/images/20.jpg',
+              image: 'assets/images/20.jpg',
               text: 'Bathrom',
               color1: Colors.blue),
           RecProduct(
-              image: '../assets/images/21.jpg',
+              image: 'assets/images/21.jpg',
               text: 'Free food',
               color1: Colors.blue),
           RecProduct(
-              image: '../assets/images/22.jpg',
+              image: 'assets/images/22.jpg',
               text: 'Accesorise',
               color1: Colors.blue),
           RecProduct(
-              image: '../assets/images/23.jpg',
+              image: 'assets/images/23.jpg',
               text: 'Bedrom',
               color1: Colors.blue),
         ],
